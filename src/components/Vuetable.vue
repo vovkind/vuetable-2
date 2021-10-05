@@ -677,7 +677,7 @@ export default {
       let title = this.getTitle(field)
 
       if (title.length > 0 && this.isInCurrentSortGroup(field) || this.hasSortableIcon(field)) {
-        let style = `opacity:${this.sortIconOpacity(field)};position:absolute;float:right`
+        let style = `opacity:${this.sortIconOpacity(field)};position:absolute;float:right;top:0.4em;`
         let iconTag = this.showSortIcons ? this.renderIconTag(['sort-icon', this.sortIcon(field)], `style="${style}"`) : ''
         return title + ' ' + iconTag
       }
